@@ -1,0 +1,13 @@
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
+$nunito: Nunito, Helvetica, sans-serif;
+$varela: Varela, Helvetica, sans-serif;
+
+// Font styles for the stylguide
+@include font-face(nunito, '../fonts/nunito-light-webfont');
+@include font-face(varela, '../fonts/varelaround-regular-webfont');
+
+

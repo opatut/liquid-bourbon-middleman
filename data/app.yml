@@ -1,0 +1,6 @@
+# Styleguide Framework data
+name: "Liquid Bourbon Middleman Template"
+lang: en
+css-path: app/styles
+js-path: app/scripts
+

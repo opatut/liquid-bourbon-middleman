@@ -1,0 +1,58 @@
+$sliding-menu-border-color: $dark-gray;
+$sliding-menu-background: lighten($sliding-menu-border-color, 5);
+$sliding-menu-color: #ffffff;
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $base-accent-color;
+$sliding-menu-color-hover: #ffffff;
+
+.sliding-menu-button {
+   position: absolute;
+   top: ($base-layout-helper * 2);
+   right: ($base-layout-helper * 2);
+   font-size: $base-font-size;
+   outline: none;
+   cursor: pointer;
+   img {
+      height: 1.3em;
+   }
+
+}
+
+.sliding-menu-content {
+   z-index: 999999;
+   overflow-y: scroll;
+   background: $sliding-menu-background;
+   @include position(fixed, 0px auto 0px 0px);
+   @include size(220px 100%);
+   @include transform(translateX(-220px));
+   @include transition(all .25s linear);
+
+   -webkit-overflow-scrolling: touch;
+   li a {
+      display: block;
+      padding: 1em;
+      border-bottom: $sliding-menu-border;
+      font-weight: bold;
+      color: $sliding-menu-color;
+      &:hover {
+         color: $sliding-menu-color-hover;
+         background-color: $sliding-menu-background-hover;
+      }
+   }
+   &.is-visible {
+      @include transform(translateX(0));
+   }
+}
+
+.menu-screen {
+   z-index: 999998;
+   visibility: hidden;
+   opacity: 0;
+   background: $sliding-menu-border-color;
+   @include position(fixed, 0px 0px 0px 0px);
+   @include transition;
+   &.is-visible {
+      visibility: visible;
+      opacity: .4;
+   }
+}

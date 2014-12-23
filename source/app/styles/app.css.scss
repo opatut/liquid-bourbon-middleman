@@ -1,0 +1,12 @@
+//-- Sass Framework Dependencies --//
+@import "../../external/bourbon/bourbon";
+@import "../../external/base/grid-settings";
+@import "../../external/neat/neat";
+@import "../../external/base/base";
+
+//-- App Frame Dependencies --//
+@import "partials/layout";
+@import "partials/parallax";
+@import "partials/main-navi";
+
+

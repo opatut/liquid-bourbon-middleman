@@ -1,0 +1,4 @@
+.b-layout {
+    @include outer-container();
+    @include pad(8em 2em);
+}
