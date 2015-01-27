@@ -23,7 +23,7 @@ gem 'jslint', '~> 1.2.0', :require => false
 gem 'sass', '~> 3.4.9', :require => false
 
 # Linter for the project scss
-# gem 'scss-lint', '~> 0.30.0' , :require => false
+gem 'scss-lint', '~> 0.30.0' , :require => false
 
 # Sass Mixin Library (Currently only for the app frame)
 gem 'bourbon', '~> 4.0.2', :require => false
